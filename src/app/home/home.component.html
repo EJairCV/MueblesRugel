@@ -1,0 +1,40 @@
+<app-nav-bar></app-nav-bar>
+<div class="row justify-content-center mx-0 mt-2 ">
+    <div class="col-md-3 mt-3" style="max-width: 300px;">
+        <div class="accordion " id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  Tipo de mueble         
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="list-group rounded-0 accordion-body p-0 ">
+                  <div >
+                    <button type="button"  class="list-group-item list-group-item-action">opción 1</button>
+                  </div>          
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                  Tipo de material
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                <div class="list-group rounded-0 accordion-body p-0 ">
+                  <button type="button"   class="list-group-item list-group-item-action">Material 1</button> 
+                </div>
+              </div>
+            </div>
+        </div> 
+    </div>
+    <div class="col-md-8 d-flex flex-wrap d-flex justify-content-evenly">
+        <app-mueble class="m-3" *ngFor="let mueble of arrayMueble" [mueble]="mueble"></app-mueble>
+    </div>
+</div>
+<app-footer class=""></app-footer>
+
+
+

@@ -1,0 +1,20 @@
+<app-nav-bar></app-nav-bar>
+<div class="bg-secondary" style="height: 100%;">
+    <div class="d-flex flex-row justify-content-evenly align-items-center  flex-wrap" style="min-height: 700px;">
+        <div class="mx-3 my-5">
+            <img class="img-fluid shadow rounded" src="{{mueble.link}}" alt="imagen de mueble">
+        </div>
+        <div class="mx-5 text-light">
+            <h3 class="my-4">{{mueble.nombre}}</h3>
+            <h5 class="my-4">descripción</h5>
+            <p style="font-family: Didot;" class="my-4">{{mueble.descripcion}}</p>
+            <h5 class="my-4">Precio a por mayor: {{mueble.precioMayor}} </h5>
+            <h5 class="my-4">Precio a por menor: {{mueble.precioUnidad}}</h5>
+            <div class="d-flex flex-row flex-wrap justify-content-evenly">            
+                <button class="btn btn-outline-light my-3 ">Ubicanos!</button>   
+                <a href="https://api.whatsapp.com/send?phone=51926667490&text=hola!+me+interesa+este+producto%3A+{{mueble.nombre}}"><button class="btn btn-outline-light my-3">Contactanos para este producto</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>
